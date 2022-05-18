@@ -1,2 +1,13 @@
-# lewis-hamilton
- Site do Lewis Hamilton com React e SCSS
+# Site do Lewis Hamilton feito com React.js e SCSS
+
+Projeto criado para treinar as seguintes tecnologias:
+* Figma
+* HTML
+
+* CSS
+* SCSS
+
+* JavaScript
+* React.js
+
+Utilize `npm start` para rodar o repositório no seu editor
