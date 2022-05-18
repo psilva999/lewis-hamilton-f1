@@ -1,0 +1,19 @@
+@import 'config';
+
+* {
+  margin:0;
+  border:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:$main-font;
+}
+
+body {
+  display:grid;
+  justify-content:center;
+  width:100vw;
+}
+
+div {
+  background:red;
+}
