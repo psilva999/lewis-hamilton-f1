@@ -13,6 +13,8 @@
     "src\\logo.svg": true,
     "src\\reportWebVitals.js": true,
     "src\\setupTests.js": true,
-    "src\\index.js": true
+    "src\\index.js": true,
+    "LICENSE": true,
+    ".gitattributes": true
   }
 }

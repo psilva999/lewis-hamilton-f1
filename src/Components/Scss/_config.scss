@@ -1,3 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-$main-font:Source sans pro, sans-serif;
+$body-background:rgb(50, 50, 50);
+$body-gradient:linear-gradient(170deg, rgba(50, 50, 50, 1) 0%, rgba(35, 35, 35, 1) 50%, rgba(17, 17, 17, 1) 100%) fixed;
+
+$main-font:'Source Sans Pro', sans-serif;

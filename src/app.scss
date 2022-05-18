@@ -1,4 +1,4 @@
-@import 'config';
+@import './Components/scss/config';
 
 * {
   margin:0;
@@ -9,11 +9,10 @@
 }
 
 body {
+  background:$body-background;
+  background:$body-gradient;
   display:grid;
   justify-content:center;
-  width:100vw;
 }
 
-div {
-  background:red;
-}
+/* scroll */
