@@ -1,8 +1,82 @@
+@import 'config';
+@import 'keyframes';
+
+header, nav, .menu {
+  display:flex;
+}
+
 header {
   position:absolute;
   top:0;
   left:0;
   width:100vw;
-  min-height:2rem;
-  background:red;
+  border-radius:0rem 0rem 1.2rem 1.2rem;
+  background:$header-background;
+  background:$header-gradient;
+  padding:.2rem 1.5rem .6rem 1.2rem;
+  justify-content:space-between;
+  align-items:center;
+
+  .logo, li, button {
+    cursor:pointer;
+  }
+
+  li, button {
+    color:$m-white;
+  }
+
+  nav {
+    align-items:center;
+    gap:2.5rem;
+  }
+
+  .menu {
+    gap:1.5rem;
+  }
+
+  li {
+    display:inline-block;
+    list-style:none;
+    font-size:1.125rem;
+    padding:.125rem .375rem;
+    opacity:.8;
+    transition:$padrao-button;
+
+    &:hover {
+      opacity:1;
+      transition:$padrao-button;
+    }
+  
+    &::after {
+      content: '';
+      background:$contrast;
+      height:.13rem;
+      position:absolute;
+      margin-top:1.4rem;
+      margin-left:-1rem;
+      float:right;
+      opacity:.9;
+    }
+  }
+
+  button {
+    background: linear-gradient(90deg, rgba(0, 161, 156, 1), rgba(16, 197, 192, 0) 51%, rgba(16, 197, 192, 0)) var(--x, 0) / 200%;
+    min-width:6.2rem;
+    padding:.5rem .8rem .5rem 1rem;
+    border-radius:.2rem;
+    font-size:1.125rem;
+    transition:$padrao-button;
+
+    svg {
+      margin-left:.5rem;
+    }
+
+    &:hover {
+      svg {
+        animation:m-arrow 1.3s infinite;
+      }
+
+      --x:-70%;
+    }
+  }
 }

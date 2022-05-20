@@ -1,0 +1,34 @@
+/* header */
+@keyframes m-arrow {
+  0% {
+    transform:translateX(0);
+  }
+
+  50% {
+    transform: translateX(.5rem);
+  }
+
+  100% {
+    transform:translateX(0);
+  }
+}
+
+@keyframes show-detail {
+  from {
+    width: 0rem;
+  }
+
+  to {
+    width: 1rem;
+  }
+}
+
+@keyframes hides-detail {
+  from {
+    width: 1rem;
+  }
+
+  to {
+    width: 0rem;
+  }
+}
