@@ -4,7 +4,7 @@ import './App.css'
 import './app.scss'
 
 import Header from './Components/Header'
-// import SectionSaibaMais from './Components/SectionSaibaMais'
+import SectionSaibaMais from './Components/SectionSaibaMais'
 
 // import SectionCuriosidades from './Components/SectionCuriosidades'
 // import Footer from './Components/Footer'
@@ -14,13 +14,13 @@ function App() {
     <>
       <Header/>
 
-      {/* <main>
+      <main>
         <SectionSaibaMais/>
 
-        <SectionCuriosidades/>
+        {/* <SectionCuriosidades/> */}
       </main>
 
-      <Footer/> */}
+      {/* <Footer/> */}
     </>
   )
 }

@@ -13,6 +13,22 @@ body {
   background:$body-gradient;
   display:grid;
   justify-content:center;
-}
+  overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:#7c6a6a;
 
-/* scroll */
+  &::-webkit-scrollbar {
+    width:.43rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$track-background;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background:$scroll-background;
+    background:$scroll-gradient;
+    border-radius:.31rem;
+    border:.375rem solid $scroll-gradient;
+  }
+}

@@ -6,7 +6,7 @@ header, nav, .menu {
 }
 
 header {
-  position:absolute;
+  position:fixed;
   top:0;
   left:0;
   width:100vw;
@@ -16,6 +16,7 @@ header {
   padding:.2rem 1.5rem .6rem 1.2rem;
   justify-content:space-between;
   align-items:center;
+  z-index:3;
 
   .logo, li, button {
     cursor:pointer;
@@ -31,7 +32,7 @@ header {
   }
 
   .menu {
-    gap:1.5rem;
+    gap:1.8rem;
   }
 
   li {
