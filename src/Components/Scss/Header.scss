@@ -65,15 +65,16 @@ header {
     padding:.5rem .8rem .5rem 1rem;
     border-radius:.2rem;
     font-size:1.125rem;
-    transition:$padrao-button;
+    transition:.5s;
 
     svg {
       margin-left:.5rem;
+      animation:back-arrow .5s forwards;
     }
 
     &:hover {
       svg {
-        animation:m-arrow 1.3s infinite;
+        animation:go-arrow .5s forwards;
       }
 
       --x:-70%;

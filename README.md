@@ -11,3 +11,5 @@ Projeto criado para treinar as seguintes tecnologias:
 * React.js
 
 Utilize `npm start` para rodar o repositório no seu editor
+
+Acesse o site [https://psilva999.github.io/lewis-hamilton/]

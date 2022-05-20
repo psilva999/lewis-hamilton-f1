@@ -1,16 +1,22 @@
 /* header */
-@keyframes m-arrow {
-  0% {
+@keyframes back-arrow {
+  from {
+    transform: translateX(.3rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes go-arrow {
+  from {
     transform:translateX(0);
   }
 
-  50% {
-    transform: translateX(.5rem);
-  }
-
-  100% {
-    transform:translateX(0);
-  }
+  to {
+    transform: translateX(.3rem);
+  } 
 }
 
 @keyframes show-detail {
