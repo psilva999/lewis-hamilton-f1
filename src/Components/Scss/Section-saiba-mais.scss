@@ -1,12 +1,12 @@
 @import 'config';
 @import 'keyframes';
 
-img {
+.background-image {
   position:absolute;
   top:0;
   left:0;
   width:100vw;
-  height:105vh;
+  height:115vh;
   object-fit:cover;
   filter:blur(.1rem);
   z-index:-1;

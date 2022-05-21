@@ -6,7 +6,7 @@ import BackgroundImage from '../Assets/2-background-image.jpg'
 const SectionSaibaMais = () => {
   return (
     <section>
-      <img src={ BackgroundImage } alt='Lewis Hamilton no carro da Mercedes'/>
+      <img src={ BackgroundImage } alt='Lewis Hamilton no carro da Mercedes' className='background-image'/>
 
       <article>
         Um dos maiores pilotos da história da Fórmula 1
