@@ -5,8 +5,6 @@
   background:#F0EFEF;
   width:100vw;
   height:100vh;
-  // -webkit-clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
-  // clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
   display:flex;
@@ -16,11 +14,19 @@
   z-index:2;
 
   div {
+    opacity:0;
+  }
+
+  div.active {
     display:grid;
     gap:.8rem;
     align-items:center;
     justify-items:center;
     padding-left:.7rem;
+
+    &.active:first-child, &.active:nth-child(2), &.active:nth-child(3) {
+      animation:show-curiosidade 1.5s forwards;
+    }
 
     img {
       opacity: .9;

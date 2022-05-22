@@ -1,4 +1,5 @@
 import React from 'react'
+import { scrollAnime } from './Events/scroll.js'
 import './scss/section-curiosidades.scss'
 
 import Trophy from '../Assets/3-trophy.svg'
@@ -6,6 +7,9 @@ import Winner from '../Assets/4-winner.svg'
 import PolePositions from '../Assets/5-pole-positions.svg' 
 
 const SectionCuriosidades = () => {
+  scrollAnime()
+  window.addEventListener('scroll', scrollAnime)
+
   return (
     <section className='curiosidades'>
       <div>
