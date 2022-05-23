@@ -1,5 +1,6 @@
 @import 'config';
 @import 'keyframes';
+@import 'queries';
 
 header, nav, .menu {
   display:flex;
@@ -22,13 +23,17 @@ header {
     cursor:pointer;
   }
 
-  li, button {
+  li, .login {
     color:$m-white;
   }
 
   nav {
     align-items:center;
     gap:2.5rem;
+  }
+
+  .toggle-menu {
+    display:none;
   }
 
   .menu {
@@ -60,7 +65,7 @@ header {
     }
   }
 
-  button {
+  .login {
     background: linear-gradient(90deg, rgba(0, 161, 156, 1), rgba(16, 197, 192, 0) 51%, rgba(16, 197, 192, 0)) var(--x, 0) / 200%;
     min-width:6.2rem;
     padding:.5rem .8rem .5rem 1rem;

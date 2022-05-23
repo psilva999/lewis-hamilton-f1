@@ -11,13 +11,15 @@ const Header = () => {
       <Logo className='logo'/>
 
       <nav>
+        <button className='toggle-menu'></button>
+
         <ul className='menu'>
           <li onMouseOver={ showFirstDetail } onMouseOut={ hidesFirstDetail }>História</li>
           <li onMouseOver={ showSecondDetail } onMouseOut={ hidesSecondDetail }>Recordes</li>
           <li onMouseOver={ showThirdDetail } onMouseOut={ hidesThirdDetail }>Contato</li>
         </ul>
 
-        <button>
+        <button className='login'>
           LOGIN 
           <Arrow/>
         </button>

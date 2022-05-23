@@ -1,16 +1,16 @@
 @import 'config';
 @import 'keyframes';
+@import 'queries';
 
 .curiosidades {
   background:#F0EFEF;
   width:100vw;
-  height:100vh;
+  min-height:100vh;
   -webkit-clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:15rem;
+  display:grid;
+  place-items:center;
+  grid-template-columns:repeat(3, 1fr);
   z-index:2;
 
   div {

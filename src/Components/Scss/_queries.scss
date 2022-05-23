@@ -1,0 +1,78 @@
+@media (max-width:48rem) {
+  header {
+    padding:0rem 1.5rem .6rem .3rem;
+
+    .logo {
+      height:3rem;
+    }
+
+    nav {
+      gap:none;
+      cursor:pointer;
+      width:2.7rem;
+      height:1rem;
+      border-radius:.3rem;
+      padding:none;
+      justify-content:center;
+      margin-top:1.1rem;
+    }
+
+    .toggle-menu, .toggle-menu:before, .toggle-menu:after {
+      background:$toggle-menu-background;
+      background:$toggle-menu-gradient;
+      border-radius:.1rem 0 0 .1rem;
+    }
+
+    .toggle-menu {
+      display:block;
+      width:2rem;
+      height:.3rem;
+
+      &:before, &:after {
+        content:'';
+        position:absolute;
+      }
+
+      &:before {
+        width:2.5rem;
+        height:.3rem;
+        margin-left:-2rem;
+        margin-top:-.8rem;
+      }
+    } 
+    
+    .menu, .login {
+      display:none;
+    }
+  }
+
+  .background-image {
+    height:127vh;
+  }
+
+  section {
+    article {
+      font-size:1.625rem;
+      max-width: 26rem;
+    }
+  }
+
+  .curiosidades {
+    grid-template-columns:1fr;
+    min-height:100rem;
+    gap:1rem;
+    padding-top:11rem;
+    padding-bottom:15rem;
+    
+    
+    div.active:nth-child(2), div.active:nth-child(3) {
+      margin-top:3rem;
+    }
+  }
+}
+
+//menu
+// background: rgb(50, 50, 50);
+// background: linear-gradient(45deg, rgba(50, 50, 50, 1) 75%, rgba(161, 161, 161, 0.7) 100%);
+
+//toggle close background:#00A19C;
