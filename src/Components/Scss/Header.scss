@@ -23,7 +23,11 @@ header {
     cursor:pointer;
   }
 
-  li, .login {
+  .login-menu {
+    display:none;
+  }
+
+  li, .login, .login-menu.active {
     color:$m-white;
   }
 
@@ -65,13 +69,14 @@ header {
     }
   }
 
-  .login {
+  .login, .login-menu.active {
     background: linear-gradient(90deg, rgba(0, 161, 156, 1), rgba(16, 197, 192, 0) 51%, rgba(16, 197, 192, 0)) var(--x, 0) / 200%;
     min-width:6.2rem;
     padding:.5rem .8rem .5rem 1rem;
     border-radius:.2rem;
     font-size:1.125rem;
     transition:.5s;
+    display:block;
 
     svg {
       margin-left:.5rem;

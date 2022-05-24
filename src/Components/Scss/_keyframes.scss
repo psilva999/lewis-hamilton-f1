@@ -39,6 +39,31 @@
   }
 }
 
+//menu {
+@keyframes show-menu {
+  from {
+    opacity:0;
+    transform:translateY(1rem);
+  }
+
+  to {
+    opacity:1;
+    transform:translateY(0rem);
+  }
+}
+
+@keyframes hides-menu {
+  from {
+    opacity:1;
+    transform: translateY(0rem);
+  }
+
+  to {
+    opacity:0;
+    transform: translateY(1rem);
+  }
+}
+
 //Saiba mais
 @keyframes show-main-container {
   from {
