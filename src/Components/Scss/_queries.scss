@@ -1,4 +1,8 @@
-@media (max-width:48rem) {
+@media (max-width:65rem) {
+  body {
+    background:none;
+  }
+
   header {
     padding:0rem 1.5rem .6rem .3rem;
 
@@ -58,15 +62,56 @@
   }
 
   .curiosidades {
+    -webkit-clip-path:polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
     grid-template-columns:1fr;
     min-height:100rem;
     gap:1rem;
-    padding-top:11rem;
-    padding-bottom:15rem;
-    
+    padding-top:5rem;
+    padding-bottom:10rem;
     
     div.active:nth-child(2), div.active:nth-child(3) {
-      margin-top:3rem;
+      margin-top:1rem;
+    }
+  }
+
+  footer {
+    -webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%) !important;
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%) !important;
+    margin-top:-9rem !important;
+    padding-top:6rem !important;
+  }
+
+  .container {
+    height:45rem !important;
+    width:auto !important;
+    display:grid !important;
+    place-content:top !important;
+    gap:5rem;
+    margin-top:6rem !important;  
+    margin-left:-3rem !important;
+  }
+
+  .perguntas-frequentes, .feedback {
+    margin-left:2.8rem;
+  }
+
+  .perguntas-frequentes {
+    grid-area:2 / 1;
+    margin-top:12rem;
+  }
+
+  .newsletter {
+    justify-self:center;
+    height:6.8rem;
+  }
+
+  .feedback {
+    height:5rem;
+    grid-area:2 / 1;
+
+    span {
+      width:6.5rem;
     }
   }
 }

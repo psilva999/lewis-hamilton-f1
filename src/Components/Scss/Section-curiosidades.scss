@@ -22,14 +22,14 @@
     gap:.8rem;
     align-items:center;
     justify-items:center;
-    padding-left:.7rem;
+    padding-left:-.7rem;
 
     &.active:first-child, &.active:nth-child(2), &.active:nth-child(3) {
       animation:show-curiosidade 1.5s forwards;
     }
 
     img {
-      opacity: .9;
+      opacity:.9;
     }
 
     span {

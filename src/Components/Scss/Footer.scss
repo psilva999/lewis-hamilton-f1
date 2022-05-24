@@ -9,6 +9,7 @@ footer {
   -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
   margin-top:-6rem;
+  margin-right:-22rem;
   display:grid;
   place-items:center;
   padding:5rem 0 6rem .2rem;
@@ -29,11 +30,11 @@ footer {
 
 .container {
   display:flex;
-  justify-content:center;
-  gap:11.3rem;
+  justify-content:space-between;
   color:$m-white;
-  margin-left:6.4rem;
+  margin-left:6.2rem;
   margin-top:3rem;
+  width:80%;
   height:17rem;
 
   .perguntas-frequentes, span {
@@ -50,7 +51,11 @@ footer {
 
   .perguntas-frequentes {
     display:grid;
-    place-content:top;
+    height:17rem;
+
+    a {
+      width:8.5rem;
+    }
 
     a:first-child {
       margin-top:.2rem;

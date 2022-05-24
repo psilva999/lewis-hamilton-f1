@@ -1,6 +1,4 @@
 import React from 'react'
-// import { Link, animateScroll as scroll } from 'react-scroll'
-
 import './App.css'
 import './app.scss'
 
