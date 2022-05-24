@@ -28,9 +28,10 @@
     }
 
     .toggle-menu {
-      display:block;
+      display:block !important;
       width:2rem;
       height:.3rem;
+      transition:.3s;
 
       &:before, &:after {
         content:'';
@@ -43,14 +44,25 @@
         margin-left:-2rem;
         margin-top:-.8rem;
       }
-    } 
+    }
+
+    .toggle-menu.close {
+      transition:.3s;
+      transform:rotate(145deg);
+
+      &:before {
+        opacity:0;
+      }
+    }
     
     .menu, .login {
-      display:none;
+      display:none !important;
+      animation:hides-menu .3s forwards;
     }
 
     .menu.active {
-      display:grid;
+      cursor:initial;
+      display:grid !important;
       background:$menu-background;
       background:$menu-gradient;
       position:absolute;
