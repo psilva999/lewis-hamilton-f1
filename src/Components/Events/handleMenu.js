@@ -6,8 +6,6 @@ export function resizeWindow() {
 }
 
 export function menuMobile(e) {
-  console.log(e.target, e.currentTarget)
-
   let toggleMenu = document.querySelector(".toggle-menu"),
       menu = document.querySelector(".menu"),
       buttonLoginMenu = document.querySelector(".login-menu")
@@ -51,6 +49,29 @@ export function closeMenu(e) {
       if (tempo === 0) {
         document.querySelector('.menu').classList.remove('active')
         document.querySelector('.menu').style.animation = 'show-menu .3s forwards'
+        clearInterval(retiraMenu)
+      }
+    }
+  }
+}
+
+export function closeMenuByMore() {
+  let toggleMenu = document.querySelector(".toggle-menu"),
+      menu = document.querySelector(".menu")
+
+  let tempo = 3
+
+  if (menu.classList.contains('active')) {
+    menu.style.animation = 'hides-menu .3s forwards'
+    toggleMenu.classList.remove("close")
+
+    let retiraMenu = setInterval(timeMenu, 100)
+    function timeMenu() {
+      tempo--
+
+      if (tempo === 0) {
+        menu.classList.remove('active')
+        menu.style.animation = 'show-menu .3s forwards'
         clearInterval(retiraMenu)
       }
     }

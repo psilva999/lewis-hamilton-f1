@@ -159,12 +159,7 @@
 @media (max-width:27rem) {
   header {
     nav {
-      margin-top:-.3rem;
-      margin-right:-.5rem;
-    }
-
-    .toggle-menu:before {
-      height: .26rem;
+      margin-right:-.8rem;
     }
   }
 
@@ -175,7 +170,7 @@
     }
   }
 
-  button {
+  .link-scroll {
     margin-top:1.8rem !important;
   }
 

@@ -33,10 +33,16 @@ section {
     text-align:center;
     animation:show-main-container 1.8s forwards;
 
+    .link-scroll {
+      margin-top:2.5rem;
+      border-radius:.375rem;
+      justify-self:center;
+      background:green;
+    }
+
     button {
       background:rgb(0, 161, 156);
       background:linear-gradient(90deg, rgba(0, 161, 156, 1) 0%, rgba(42, 240, 235, .1)) var(--x, 0%) / 200%;
-      margin-top:2.5rem;
       border-radius:.375rem;
       padding:.75rem 1.5rem;
       justify-self:center;
