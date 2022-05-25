@@ -1,12 +1,9 @@
 import React from 'react'
-import { showOpenEmail, showChecked, showCloseEmail } from './Events/handleEmailSvg'
 import './scss/footer.scss'
 
 import Helmet from '../Assets/6-f1-helmet.svg'
-import CloseEmail from '../Assets/7-email-close.svg'
-
-import OpenEmail from '../Assets/8-email-open.svg'
-import Checked from '../Assets/9-check.svg'
+import { openEmail, closeEmail, checked } from './Events/svgAndRegex.js'
+import HandleEmailSvg from './Events/HandleEmailSvg.js'
 
 const Footer = () => {
   return (
@@ -34,16 +31,9 @@ const Footer = () => {
           <h1>Quer saber mais novidades?</h1>
           <span>Inscreva-se na nossa Newsletter</span>
 
-          <input type='email' placeholder='E-mail'/>
-          <button 
-            onMouseOver={ showOpenEmail }
-            onMouseOut={ showCloseEmail }
-            onClick={ showChecked }>
-
-            <img src={ CloseEmail } alt='Email fechado' className='close-email'/>
-            <img src={ OpenEmail } alt='Email aberto' className='open-email'/>
-
-            <img src={ Checked } alt='Checado' className='checked'/>
+          <input type='email' placeholder='E-mail' id='email'/>
+          <button className='sendEmail' onClick={ checked } onMouseOver={ openEmail } onMouseOut={ closeEmail }>
+            <HandleEmailSvg/>
           </button>
         </div>
 

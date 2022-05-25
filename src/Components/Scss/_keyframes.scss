@@ -101,3 +101,20 @@
     transform:translateX(0);
   }
 }
+
+//footer 
+@keyframes anima-email {
+  from {
+    width:0rem;
+    opacity:1;
+  }
+
+  50% {
+    opacity:.7;
+  }
+
+  to {
+    opacity:0;
+    width:14.6rem;
+  }
+}
