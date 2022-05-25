@@ -186,4 +186,10 @@
   }
 }
 
-//toggle close background:#00A19C;
+@media (max-height:32rem) {
+  section {
+    article {
+      margin-top:6rem;
+    }
+  }
+}

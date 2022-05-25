@@ -1,6 +1,7 @@
 import React from 'react'
-import './scss/section-saiba-mais.scss'
+import { Link } from 'react-scroll'
 
+import './scss/section-saiba-mais.scss'
 import BackgroundImage from '../Assets/2-background-image.jpg'
 
 const SectionSaibaMais = () => {
@@ -11,7 +12,16 @@ const SectionSaibaMais = () => {
       <article classList='saiba-mais'>
         Um dos maiores pilotos da história da Fórmula 1
 
-        <button>SAIBA MAIS</button>
+        <button>
+          <Link activeClass="active"
+            to='saiba-mais'
+            spy={ true }
+            smooth={ true }
+            offset={ -40 }
+            duration={ 600 }> 
+              SAIBA MAIS 
+          </Link>
+        </button>
       </article>
     </section>
   )

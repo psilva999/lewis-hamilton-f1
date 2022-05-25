@@ -40,7 +40,7 @@ export function menuMobile(e) {
 export function closeMenu(e) {
   let tempo = 3
 
-  if (e.target.id !== 'toggle-menu' && e.target.id !== 'menu') {
+  if ((e.target.id !== 'toggle-menu' && e.target.id !== 'menu') && window.matchMedia("(max-width:1040px)").matches) {
     document.querySelector('.menu').style.animation = 'hides-menu .3s forwards'
     document.querySelector('.toggle-menu').classList.remove("close")
 

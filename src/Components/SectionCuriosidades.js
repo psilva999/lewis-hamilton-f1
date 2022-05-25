@@ -11,7 +11,7 @@ const SectionCuriosidades = () => {
   window.addEventListener('scroll', scrollAnime)
 
   return (
-    <section className='curiosidades'>
+    <section className='curiosidades' id='saiba-mais'>
       <div>
         <img src={ Trophy } alt='trophy'/>
         <span className='titulos'>7 títulos</span>
