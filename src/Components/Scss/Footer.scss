@@ -71,6 +71,36 @@ footer {
       font-weight:600;
     }
 
+    .email-error {
+      display:none;
+    }
+
+    .email-error.active {
+      position:absolute;
+      margin-top:7.2em;
+      background:#F1F1F1;
+      color:#403607;
+      display:flex;
+      gap:.5rem;
+      padding:.2rem .4rem;
+      font-weight:bold;
+      border-radius:.2rem;
+      border:.2rem solid #FFD91D;
+      animation:show-error 4s forwards;
+
+      &:after {
+        content:'';
+        position:absolute;
+        width:.75rem;
+        height:.75rem;
+        background:#FFD91D;
+        z-index:-1;
+        margin-top:-.77rem;
+        margin-left:.3rem;
+        transform:rotate(45deg);
+      }
+    }
+
     input {
       border-radius:.4rem 0 0 .4rem;
       background:#CDCDCD;

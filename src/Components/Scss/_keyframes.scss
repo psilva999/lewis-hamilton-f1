@@ -65,6 +65,16 @@
 }
 
 //Saiba mais
+@keyframes background-blur {
+  from {
+    filter:blur(0);
+  }
+
+  to {
+    filter:blur(.1rem);
+  }
+}
+
 @keyframes show-main-container {
   from {
     opacity:0;
@@ -116,5 +126,27 @@
   to {
     opacity:0;
     width:14.6rem;
+  }
+}
+
+@keyframes show-error {
+  0% {
+    transform:translateY(.5rem);
+    opacity:1;
+  }
+
+  15% {
+    transform:translateY(0);
+    opacity:1;
+  }
+
+  50% {
+    transform:translateY(0);
+    opacity:1;
+  }
+
+  100% {
+    opacity:0;
+    display:none;
   }
 }

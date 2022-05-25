@@ -2,6 +2,8 @@ import React from 'react'
 import './scss/footer.scss'
 
 import Helmet from '../Assets/6-f1-helmet.svg'
+import Error from '../Assets/11-error.svg'
+
 import { openEmail, closeEmail, checked } from './Events/svgAndRegex.js'
 import HandleEmailSvg from './Events/HandleEmailSvg.js'
 
@@ -30,6 +32,11 @@ const Footer = () => {
         <div className='newsletter'>
           <h1>Quer saber mais novidades?</h1>
           <span>Inscreva-se na nossa Newsletter</span>
+
+          <p className='email-error'>
+            <img src={ Error }/>
+            Inclua um "@" para validar
+          </p>
 
           <input type='email' placeholder='E-mail' id='email'/>
           <button className='sendEmail' onClick={ checked } onMouseOver={ openEmail } onMouseOut={ closeEmail }>

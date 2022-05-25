@@ -27,10 +27,32 @@ export function openEmail() {
 }
 
 export function checked() {
-  let img = document.querySelector('#img'),
-      button = document.querySelector('.sendEmail')
+  const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+        email = document.querySelector('#email')
 
-  img.src = `${ Checked }`
-  button.classList.add('checked')
-  button.style.background = '#24B576'
+  if (email.value.match(regex)) {
+    let img = document.querySelector('#img'),
+        button = document.querySelector('.sendEmail')
+
+    img.src = `${ Checked }`
+    button.classList.add('checked')
+    button.style.background = '#24B576'
+  }
+
+  else {
+    let error = document.querySelector('.email-error'),
+        tempo = 3
+    error.classList.add('active')
+
+    let retiraMensagemDeErro = setInterval(retiraErro, 1000)
+    function retiraErro() {
+      tempo--
+
+      if (tempo === 0) {
+        clearInterval(retiraMensagemDeErro)
+        error.classList.remove('active')
+      }
+    }
+
+  }
 }

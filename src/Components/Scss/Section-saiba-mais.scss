@@ -5,12 +5,12 @@
 .background-image {
   position:absolute;
   top:0;
-  left:0;
+  left:-.1rem;
   width:105vw;
   height:115vh;
   object-fit:cover;
-  filter:blur(.1rem);
   z-index:-1;
+  animation:background-blur .3s forwards;
 }
 
 section, article {
