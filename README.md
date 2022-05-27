@@ -12,4 +12,4 @@ Projeto criado para treinar as seguintes tecnologias:
 
 Utilize `npm start` para rodar o repositório no seu editor
 
-Acesse o site [https://Psilva999.github.io/hamilton-f1/]
+Acesse o site [https://psilva999.github.io/hamilton-f1/]
