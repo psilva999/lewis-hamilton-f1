@@ -105,6 +105,7 @@ footer {
       background:#CDCDCD;
       padding:1.5rem .75rem;
       font-size:1rem;
+      height:1.5rem;
 
       &:focus {
         outline:0;
@@ -116,8 +117,8 @@ footer {
       justify-self:center;
       position:absolute;
       border-radius:0 .4rem .4rem 0;
-      margin-left:17.5rem;
-      margin-top:3.4rem;
+      margin-left:12.61rem;
+      margin-top:-3rem;
       padding:.58rem;
       height:3rem;
       cursor:pointer;
@@ -137,7 +138,7 @@ footer {
   button.checked:after {
     content:'';
     position:absolute;
-    margin-left:-15.2rem;
+    margin-left:-13.2rem;
     width:0rem;
     height:3.1rem;
     border-radius:.4rem 0 0 .4rem;

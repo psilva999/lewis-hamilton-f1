@@ -1,4 +1,5 @@
 import React from 'react'
+import emailjs from 'emailjs-com'
 import './scss/footer.scss'
 
 import Helmet from '../Assets/6-f1-helmet.svg'
@@ -8,6 +9,22 @@ import { openEmail, closeEmail, checked } from './Events/svgAndRegex.js'
 import HandleEmailSvg from './Events/HandleEmailSvg.js'
 
 const Footer = () => {
+  function sendEmail(e) {
+    e.preventDefault()
+
+    emailjs.sendForm(
+      'service_4ii5zzr', 
+      'template_db5en8l', 
+      e.target, 
+      'GMgIzGOatYerTDpnQ')
+      .then(res => {
+        console.log(res) 
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+
   return (
     <footer>
       <img src={ Helmet } alt='capacete de f1'/>
@@ -38,10 +55,23 @@ const Footer = () => {
             Inclua um "@" para validar
           </p>
 
-          <input type='email' placeholder='E-mail' id='email'/>
-          <button className='sendEmail' onClick={ checked } onMouseOver={ openEmail } onMouseOut={ closeEmail }>
-            <HandleEmailSvg/>
-          </button>
+          <form onSubmit={ sendEmail }>
+            <input 
+              type='email' 
+              placeholder='E-mail' 
+              id='email' 
+              name='user_email'
+              oninvalid=""/>
+
+            <button 
+              type='submit'
+              className='sendEmail' 
+              onClick={ checked } 
+              onMouseOver={ openEmail } 
+              onMouseOut={ closeEmail }>
+              <HandleEmailSvg/>
+            </button>
+          </form>
         </div>
 
         <div className='feedback'>
