@@ -1,6 +1,9 @@
 @media (max-width:65rem) {
-  body {
-    background:none;
+  html, body {
+    width:100vw !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow-x:hidden !important;
   }
 
   header {
