@@ -12,7 +12,7 @@ Projeto criado para treinar as seguintes tecnologias:
 
 Utilize `npm start` para rodar o repositório no seu editor
 
-Acesse o site [https://psilva999.github.io/hamilton-f1/]
+Acesse o site [https://psilva999.github.io/lewis-hamilton-f1/]
 
 <!-- # Getting Started with Create React App
 
