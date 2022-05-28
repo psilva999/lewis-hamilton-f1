@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lewis-hamilton-f1/static/css/main.e5d2b8db.css",
+    "main.css": "/lewis-hamilton-f1/static/css/main.077a18c9.css",
     "main.js": "/lewis-hamilton-f1/static/js/main.09171196.js",
     "static/js/787.535db2ec.chunk.js": "/lewis-hamilton-f1/static/js/787.535db2ec.chunk.js",
     "static/media/2-background-image.jpg": "/lewis-hamilton-f1/static/media/2-background-image.ddfd00e67395a4fa80a8.jpg",
@@ -15,12 +15,12 @@
     "static/media/7-email-close.svg": "/lewis-hamilton-f1/static/media/7-email-close.c94af108ee9e9a0f0cdf3aed66a4cbad.svg",
     "static/media/9-check.svg": "/lewis-hamilton-f1/static/media/9-check.dd482e3a50ad570258273b4702b7b503.svg",
     "static/media/1-arrow.svg": "/lewis-hamilton-f1/static/media/1-arrow.07d0262519302524d272892ed549287e.svg",
-    "main.e5d2b8db.css.map": "/lewis-hamilton-f1/static/css/main.e5d2b8db.css.map",
+    "main.077a18c9.css.map": "/lewis-hamilton-f1/static/css/main.077a18c9.css.map",
     "main.09171196.js.map": "/lewis-hamilton-f1/static/js/main.09171196.js.map",
     "787.535db2ec.chunk.js.map": "/lewis-hamilton-f1/static/js/787.535db2ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5d2b8db.css",
+    "static/css/main.077a18c9.css",
     "static/js/main.09171196.js"
   ]
 }
