@@ -15,7 +15,8 @@ header {
   background:$header-background;
   background:$header-gradient;
   padding:.2rem 1.5rem .6rem 1.2rem;
-  justify-content:space-between;
+  justify-content:center;
+  gap:44rem;
   align-items:center;
   z-index:3;
 
@@ -90,5 +91,12 @@ header {
 
       --x:-70%;
     }
+  }
+}
+
+@media (max-width:1325px) {
+  header {
+    justify-content:space-between;
+    gap:0;
   }
 }
