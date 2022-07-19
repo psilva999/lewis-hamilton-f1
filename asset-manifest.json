@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lewis-hamilton-f1/static/css/main.077a18c9.css",
+    "main.css": "/lewis-hamilton-f1/static/css/main.8c38635a.css",
     "main.js": "/lewis-hamilton-f1/static/js/main.09171196.js",
     "static/js/787.535db2ec.chunk.js": "/lewis-hamilton-f1/static/js/787.535db2ec.chunk.js",
     "static/media/2-background-image.jpg": "/lewis-hamilton-f1/static/media/2-background-image.ddfd00e67395a4fa80a8.jpg",
@@ -11,16 +11,16 @@
     "static/media/5-pole-positions.svg": "/lewis-hamilton-f1/static/media/5-pole-positions.19f13a099e86a1aec6cd4629c541e8bc.svg",
     "static/media/11-error.svg": "/lewis-hamilton-f1/static/media/11-error.8aa3e22c722d033d6f4a0bfe38a09f1a.svg",
     "static/media/8-email-open.svg": "/lewis-hamilton-f1/static/media/8-email-open.a58e971bcc9837709d109f5b01477c1e.svg",
-    "index.html": "/lewis-hamilton-f1/index.html",
     "static/media/7-email-close.svg": "/lewis-hamilton-f1/static/media/7-email-close.c94af108ee9e9a0f0cdf3aed66a4cbad.svg",
+    "index.html": "/lewis-hamilton-f1/index.html",
     "static/media/9-check.svg": "/lewis-hamilton-f1/static/media/9-check.dd482e3a50ad570258273b4702b7b503.svg",
     "static/media/1-arrow.svg": "/lewis-hamilton-f1/static/media/1-arrow.07d0262519302524d272892ed549287e.svg",
-    "main.077a18c9.css.map": "/lewis-hamilton-f1/static/css/main.077a18c9.css.map",
+    "main.8c38635a.css.map": "/lewis-hamilton-f1/static/css/main.8c38635a.css.map",
     "main.09171196.js.map": "/lewis-hamilton-f1/static/js/main.09171196.js.map",
     "787.535db2ec.chunk.js.map": "/lewis-hamilton-f1/static/js/787.535db2ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.077a18c9.css",
+    "static/css/main.8c38635a.css",
     "static/js/main.09171196.js"
   ]
 }
