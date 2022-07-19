@@ -16,7 +16,7 @@ header {
   background:$header-gradient;
   padding:.2rem 1.5rem .6rem 1.2rem;
   justify-content:center;
-  gap:44rem;
+  gap:43rem;
   align-items:center;
   z-index:3;
 
@@ -94,7 +94,7 @@ header {
   }
 }
 
-@media (max-width:1325px) {
+@media (max-width:83rem) {
   header {
     justify-content:space-between;
     gap:0;
